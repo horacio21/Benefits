@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Benefits.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Prestaciones Laborales"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="15"/>
+
+            <Label Text="Fecha en la que inició a laborar en la empresa:"
+                   FontSize="Small"
+                   FontAttributes="Bold"
+                   HorizontalOptions="StartAndExpand"/>
+            <DatePicker x:Name="StartContract"/>
+
+            <Label Text="Fecha en la que finalizó el contrato de trabajo con la empresa:"
+                   FontSize="Small"
+                   FontAttributes="Bold"
+                   HorizontalOptions="StartAndExpand"/>
+            <DatePicker x:Name="EndContract"/>
+
+            <Label Text="Seleccione la frecuencia con que recibía su salario:"
+                   FontSize="Small"
+                   FontAttributes="Bold"
+                   HorizontalOptions="StartAndExpand"/>
+            <Picker
+                x:Name="SalaryType"
+                Title="Tipo de salario:"/>
+
+            <Label Text="Digite el salario:"
+                   x:Name="SalaryLabel"
+                   FontSize="Small"
+                   FontAttributes="Bold"
+                   HorizontalOptions="StartAndExpand"/>
+            <Entry 
+                x:Name="SalaryEntry"
+                FontAttributes="Bold"
+                Keyboard="Numeric"/>
+
+            <Button
+                FontAttributes="Bold"
+                Text="Calcular Prestaciones"
+                Margin="15"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

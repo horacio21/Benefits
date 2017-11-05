@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
-
-namespace Benefits
+﻿namespace Benefits
 {
+    using Benefits.Views;
+    using Xamarin.Forms;
+
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
 
-            MainPage = new Benefits.MainPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()

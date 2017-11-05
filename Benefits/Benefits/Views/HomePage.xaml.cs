@@ -13,8 +13,6 @@
             SalaryType.Items.Add("Semanal");
             SalaryType.Items.Add("Quincenal");
             SalaryType.Items.Add("Mensual");
-
-            //SalaryLabel.Text += SalaryType.ToString();
         }
     }
 }
